@@ -15,4 +15,10 @@ while quiz.still_has_questions():
     quiz.next_question()
 
 print("You've completed the quiz")
-print(f"Your final score was: {quiz.score}/{quiz.question_number}")
+if quiz.score >=5:
+    print(f"Great Job! Your final score was: {quiz.score}/{quiz.question_number}")
+elif quiz.score < 5 and quiz.score >=:
+    print(f"You did fine, better luck next time! Your final score was: {quiz.score}/{quiz.question_number}")
+else:
+    print(f"You failed the test :(, better luck next time! Your final score was: {quiz.score}/{quiz.question_number}")
+    
